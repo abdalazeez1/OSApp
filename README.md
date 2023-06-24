@@ -7,7 +7,6 @@ This is a simple Flutter project that leverages the Model-View-Controller (MVC) 
 - Getting Started
 - Test Logic App
 - Integration Test
-- Architecture
 - Libraries
 - Running the App
 - Contributing
@@ -22,27 +21,23 @@ git clone https://github.com/username/my_flutter_project.git
 cd my_flutter_project
 
 ```
-
 Install the dependencies:
 
-Copy
-flutter pub get
+Copy    flutter pub get
 ```
 
 Run the app on your preferred device or emulator.
 ### Test Logic App
 ```
-
 Run Test:
-Copy
-flutter test
+
+Copy    flutter test
 ```
 ### Integration Test
 ```
-
 Run Integration Test:
-Copy
-flutter run integration_test/app_test.dar
+
+Copy    flutter run integration_test/app_test.dar
 ```
 
 ### Architecture
@@ -73,9 +68,10 @@ The following third-party libraries are used in this project:
 
 To run the app on your preferred device or emulator, use the following command:
 
-Copy
-flutter run
 
+```
+Copy    flutter run
+```
 ### Contributing
 
 Contributions are welcome!
