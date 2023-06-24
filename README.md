@@ -31,13 +31,13 @@ Run the app on your preferred device or emulator.
 ```
 Run Test:
 
-Copy    flutter test
+Copy:    flutter test
 ```
 ### Integration Test
 ```
 Run Integration Test:
 
-Copy    flutter run integration_test/app_test.dar
+Copy:    flutter run integration_test/app_test.dar
 ```
 
 ### Architecture
@@ -70,7 +70,7 @@ To run the app on your preferred device or emulator, use the following command:
 
 
 ```
-Copy    flutter run
+Copy:   flutter run
 ```
 ### Contributing
 
