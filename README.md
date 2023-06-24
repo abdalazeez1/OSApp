@@ -11,8 +11,6 @@ This is a simple Flutter project that leverages the Model-View-Controller (MVC) 
 - Libraries
 - Running the App
 - Contributing
-- License
-- Structure Project
 ### Getting Started
 
 To get started with this project, follow these steps:
@@ -83,68 +81,3 @@ flutter run
 Contributions are welcome!
 
 
-### Structure Project
-
-lib
-|-- common
-|   |-- config_size.dart
-|   |-- dp
-|   |   `-- dp.dart
-|   |-- enum
-|   |   `-- annimation_type.dart
-|   |-- extension
-|   |   `-- extension.dart
-|   |-- network
-|   |   |-- exceptions
-|   |   |-- exceptions.dart
-|   |   |-- http_client.dart
-|   |   |-- page_state
-|   |   |   `-- page_state.dart
-|   |   |-- result.dart
-|   |   |-- route.dart
-|   |   `-- service
-|   |       `-- http_client.dart
-|   `-- widgets
-|       |-- osson_text.dart
-|       |-- ossos_filled_button.dart
-|       |-- ossos_text_button.dart
-|       `-- ossos_text_field.dart
-`-- features
-|-- first
-|   |-- controller
-|   |   |-- animation_cubit.dart
-|   |   `-- animation_state.dart
-|   |-- model
-|   |   `-- animation_with_alignment.dart
-|   `-- view
-|       |-- first_screen.dart
-|       `-- widgets
-|           `-- small_shape.dart
-|-- home
-|   |-- controller
-|   |   `-- home_cubit.dart
-|   `-- view
-|       `-- home_screen.dart
-|-- second
-|   |-- controller
-|   |   |-- pokemon_bloc.dart
-|   |   |-- pokemon_event.dart
-|   |   `-- pokemon_state.dart
-|   |-- model
-|   |   |-- pokemon.dart
-|   |   `-- pokemon_results.dart
-|   |-- view
-|   |-- second_screen.dart
-|   `-- widgets
-|       `-- pokemon_card.dart
-|-- spalsh_screen.dart
-|-- main.dart
-`-- router
-`-- router.dart
-test
-`-- features
-    `-- first
-        |-- controller
-        `-- animation_cubit_test.dart
-integration_test
-`-- app_test.dart
