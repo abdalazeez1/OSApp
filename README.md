@@ -23,7 +23,7 @@ cd my_flutter_project
 ```
 Install the dependencies:
 
-Copy    flutter pub get
+Copy:    flutter pub get
 ```
 
 Run the app on your preferred device or emulator.
