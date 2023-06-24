@@ -1,5 +1,7 @@
+import 'package:extended_image/extended_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ossos_technical_test/common/config_size.dart';
 import 'package:ossos_technical_test/common/extension/extension.dart';
 
 import '../../../../common/widgets/osson_text.dart';
@@ -7,9 +9,12 @@ import '../../model/pokemon.dart';
 
 class PokemonCard extends StatelessWidget {
   const PokemonCard({
-    super.key, required this.item,
+    super.key,
+    required this.item,
   });
-  final Pokemon item ;
+
+  final Pokemon item;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -28,17 +33,18 @@ class PokemonCard extends StatelessWidget {
               blurRadius: 2,
             )
           ],
-          borderRadius: BorderRadius.circular(16)),
+          borderRadius: OSSize.br16),
       height: 100,
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
               child: Container(
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                      color: context.colorScheme.outline.withOpacity(0.2)),
-                  child: Image.network(item.getImage ?? ""))), //todo take defult
+                  decoration:
+                      BoxDecoration(borderRadius: OSSize.br16, color: context.colorScheme.outline.withOpacity(0.2)),
+                  child: item.getImage != null
+                      ? ExtendedImage.network(item.getImage!, handleLoadingProgress: true)
+                      : FittedBox(child: FlutterLogo()))), //todo take defult
           Expanded(
               flex: 2,
               child: RPadding(

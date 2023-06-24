@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             title: const OSText("Home"),
           ),
           bottomNavigationBar: RPadding(
-            padding: REdgeInsets.all(kPage),
+            padding: REdgeInsets.all(OSSize.kPage),
             child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
               OSTextButton(
                   onPressed: () {
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
             ]),
           ),
           body: RPadding(
-            padding: REdgeInsets.symmetric(horizontal: kPage),
+            padding: REdgeInsets.symmetric(horizontal: OSSize.kPage),
             child: Column(
               children: [
                 BlocBuilder<HomeCubit, String>(

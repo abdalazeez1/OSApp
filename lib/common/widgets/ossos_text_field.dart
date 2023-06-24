@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../config_size.dart';
-
+//todo add all param
 class OSTextField extends StatelessWidget {
   const OSTextField({
     Key? key,
@@ -55,27 +55,27 @@ final TextEditingController? controller ;
       decoration: InputDecoration(
         border: OutlineInputBorder(
           borderSide: BorderSide(color: borderColor ?? Theme.of(context).colorScheme.outline),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         focusedBorder: OutlineInputBorder(
           borderSide: BorderSide(color: borderColor ?? Theme.of(context).colorScheme.outline),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: borderColor ?? Theme.of(context).colorScheme.outline),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         disabledBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Theme.of(context).colorScheme.outlineVariant),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         errorBorder: OutlineInputBorder(
           borderSide: BorderSide(color: Theme.of(context).colorScheme.error, width: 1),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderSide: BorderSide(color: borderColor ?? Theme.of(context).colorScheme.error, width: 1),
-          borderRadius: BorderRadius.circular(kbrBorderTextField),
+          borderRadius: BorderRadius.circular(OSSize.brBorderTextField),
         ),
         filled: filled,
         fillColor: Theme.of(context).colorScheme.outlineVariant.withOpacity(0.05),

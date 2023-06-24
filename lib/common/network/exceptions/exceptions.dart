@@ -2,8 +2,7 @@
 class AppException<OriginalException> implements Exception {
   const AppException({required this.message, required this.exception});
 
-  const AppException.unknown({required this.exception,required this. message})
-  ;
+  const AppException.unknown({required this.exception,required this. message});
 
   final OriginalException exception;
   final String message;

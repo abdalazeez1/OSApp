@@ -23,6 +23,8 @@ class SmallShapeWidget extends StatelessWidget {
       duration: const Duration(milliseconds: 300),
       child: GestureDetector(
         onTap: onTap,
+        key: Key(animationType.name),
+
         child: SizedBox(
           child: Container(
             height: 70.r,

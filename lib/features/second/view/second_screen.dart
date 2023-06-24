@@ -41,9 +41,10 @@ class _SecondScreenState extends State<SecondScreen> {
           builder: (context, state) {
             return Center(
               child: PagedListView<int, Pokemon>(
-                padding: REdgeInsets.all(kPage),
+                padding: REdgeInsets.all(OSSize.kPage),
                 pagingController: state.pagingController,
                 builderDelegate: PagedChildBuilderDelegate<Pokemon>(
+
                   itemBuilder: (context, item, index) => PokemonCard(item: item),
                 ),
               ),

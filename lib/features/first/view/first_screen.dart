@@ -30,7 +30,7 @@ class FirstScreen extends StatelessWidget {
                   child: (name?.isNotEmpty ?? false)
                       ? Center(
                           child: OSText(
-                          "Hi $name ",
+                          "Hi $name",
                           style: context.textTheme.displayMedium?.copyWith(fontSize: 24.sp),
                         ))
                       : const SizedBox.shrink()),
@@ -40,6 +40,7 @@ class FirstScreen extends StatelessWidget {
                   child: BlocBuilder<AnimationCubit, AnimationState>(
                     builder: (context, state) {
                       return AnimatedContainer(
+                        key: Key("BigShape"),
                         height: 250.r,
                         curve: Curves.decelerate,
                         width: 250.r,
@@ -65,23 +66,18 @@ class FirstScreen extends StatelessWidget {
                       children: [
                         SmallShapeWidget(
                             alignment: state.list[0].alignment,
-                            // state == AnimationType.withoutDecoration ? Alignment.center : Alignment.centerLeft,
                             onTap: () {
                               context.read<AnimationCubit>().changeAnimation(AnimationType.withoutDecoration);
                             },
                             animationType: AnimationType.withoutDecoration),
                         SmallShapeWidget(
                             alignment: state.list[1].alignment,
-                            // state == AnimationType.withBorderRadius
-                            //     ? Alignment.center
-                            //     : (state == AnimationType.circleShape ? Alignment.centerRight : Alignment.centerLeft),
                             onTap: () {
                               context.read<AnimationCubit>().changeAnimation(AnimationType.withBorderRadius);
                             },
                             animationType: AnimationType.withBorderRadius),
                         SmallShapeWidget(
                             alignment: state.list[2].alignment,
-                            // state == AnimationType.circleShape ? Alignment.center : Alignment.centerRight,
                             onTap: () {
                               context.read<AnimationCubit>().changeAnimation(AnimationType.circleShape);
                             },

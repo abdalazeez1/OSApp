@@ -1,3 +1,4 @@
+import 'package:equatable/equatable.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,7 +27,6 @@ class AnimationCubit extends Cubit<AnimationState> {
     list = list
         .mapIndexed((i, e) => e.alignment == Alignment.center && i != index ? e.copyWith(alignment: oldAlignment) : e)
         .toList();
-    emit(state.copyWith(list: []));
     emit(state.copyWith(list: List.from(list)));
   }
 }
